@@ -1,0 +1,321 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Michael}{Bartling}{Graduate student in machine learning and security} % Your name and current job title/field
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+109 W. 39th St
+Apt. 317
+Austin, TX 78751
+USA
+~
++1 (214) 707-2808
+~
+\href{mailto:michael.bartling15@gmail.com}{michael.bartling15
+@gmail.com}
+%\href{mailto:michael.bartling15@utexas.edu}{michael.bartling15@utexas.edu}
+\href{http://www.minionhut.com}{minionhut.com}
+\href{http://github.com/mbartling}{github.com/mbartling}
+%\section{languages}
+%english mother tongue
+%spanish \& italian fluency
+\section{programming}
+{%\color{red} $\varheartsuit$} JavaScript
+Python, C++, C++11
+Julia, Matlab, Verilog
+C, Embedded C, R}
+\section{OS}
+Debian, RHEL6-7,
+Windows, Android,
+$\mu$C/OS-II
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\section{Goal}
+%Seeking technical Summer internship.
+\section{Interests}
+
+\textbf{professional:} optimization methods, theoretical security, machine learning, software architectures, data visualization \\ \textbf{personal:} cooking, 3D CG art (Blender), guitar, animation 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2014--Present}
+{M.S. + Ph.D {\normalfont Computer Engineering}}
+{The University of Texas at Austin}
+{Advisor: Mohit Tiwari \\ Context-aware sensing, Dynamic malware analysis, Machine Learning. \\ GPA: 3.8}
+
+%------------------------------------------------
+
+\entry
+{2011--2014}
+{Bachelor of Science {\normalfont, Summa Cum Laude}}
+{Texas A \& M University, College Station}
+{Electrical Engineering \\ Specialized in Computer Engineering \\ Sub-specialized in Signal Processing and Image Processing. \\ GPA: 3.9}
+
+%------------------------------------------------
+
+\entry
+{2009--2011}
+{Advanced High School Diploma}
+{Texas Academy of Mathematics and Science}
+{\emph{UNT, Denton, Texas}
+ \\ Graduated high school 2 years early to attend accelerated TAMS program. \\ GPA: 3.89}
+
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Full Time and Internships}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2014--Now}
+{University of Texas}
+{Austin, Texas}
+{\emph{Graduate Research Assistant} \\
+\begin{itemize}
+\item Dynamic analysis of mobile malware on networks. Built user trace record and replay system for Android applications, injected key malware categories into common applications, designed intelligent anomaly detectors for Android system calls.
+\item Context aware sensing. Automatic classification of user motion into activities based on smart phone accelerometers. Dynamically \textit{learned} privacy preserving user motion models. Automatic fall prediction and detection. Inferring information across untrusted contextual boundaries. 
+\end{itemize} }
+
+\entry
+{2014--2015}
+{University of Texas}
+{Austin, Texas}
+{\emph{Graduate Teaching Assistant} \\
+Introduction to Computing }
+
+%\entry
+%{2012--2013}
+%{Texas A\& M University}
+%{College Station, Texas}
+%{\emph{Research Assistant} \\
+%\begin{itemize}
+%\item FrogSAT Project
+%\item Smart Phone Initiative
+%\end{itemize}}
+
+
+\end{entrylist}
+
+\begin{entrylist}
+
+\entry
+{2012--2014}
+{Texas Instruments, EP Labs}
+{Dallas, Texas}
+{\emph{Summer and Winter Intern} \\ Under Srinath Hosur and Ariton Xhafa \\ 
+\begin{itemize}
+\item Digital pre-distortion design 
+\item RFSDK Software development + designed end-to-end experiment manager for software-hardware interfacing.
+\item Designed intelligent LTE frame modeling and generation scripts.
+\item Wireless Backhaul Project
+	\begin{itemize}
+	\item Designed and optimized Line of Sight channel estimation drivers.
+	\item Designed and optimized Line of Sight 2x2 and 4x4 MIMO channel equalizer drivers. Conducted precision study on fixed point versus floating point implementations.
+	\item Helped formulate non line-of-sight transmitter chain on C6614 EVM
+	\item Designed and optimized Reed Solomon processing chain for TI C6614 EVM 
+	\end{itemize}
+\item Ported Contiki OS to TI FRAM line microcontrollers. 
+\end{itemize}}
+%------------------------------------------------
+
+\end{entrylist}
+
+\section{Noteworthy Projects}
+
+\begin{entrylist}
+
+\entry
+{2013--2014}
+{Senior Design}
+{Texas A\& M}
+{Honors Project under Dr. Gregory Huff and Dr. Jean-Francois Chamberland  \\
+Autonomous Mission Planning of RF Landscapes \\
+Designed robust map reconstruction algorithms (Extended block coordinate descent, Gaussian Mixture Models, and conic polynomial reconstruction) and application communication layer for autonomous quadcopter.}
+
+%------------------------------------------------
+
+\entry
+{2013-2014}
+{FrogSAT}
+{Texas A\& M}
+{Under Dr. Sunil Khatri \\
+Attempted to solve Boolean Satisfiability problem heuristically via Hadoop Map Reduce.} 
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{entrylist}
+
+%------------------------------------------------
+\entry
+{2015}
+{Dell Innovation Award: Hack TX} 
+{Austin TX}
+{Distinguishing style and content in images: The ability to create any Instagram filter.}
+\entry
+{2015}
+{2nd Place MDP Hackathon} 
+{Athena Health, Austin TX}
+{Accurate fall prediction and motion state regression using cellphone accelerometer information.}
+
+\entry
+{2014-Present}
+{Departmental Fellowship}
+{Computer Architecture and Embedded Processing, The University of Texas}
+{}
+
+\entry
+{2014}
+{Summa Cum Laude}
+{Texas A\& M University,  Electrical and Computer Engineering}
+{}
+
+\entry
+{2011-2014}
+{President's Endowed Scholar}
+{Texas A\& M University,  Electrical and Computer Engineering}
+{}
+
+\entry
+{2011-2014}
+{Boltzman Scholar}
+{Texas A\& M University,  Electrical and Computer Engineering}
+{}
+
+\entry
+{2008}
+{Eagle Scout}
+{Boy Scouts of America}
+{}
+%------------------------------------------------
+
+\end{entrylist}
+
+\section{Courses}
+\begin{itemize}
+\item Convex Optimization
+\item Large Scale Machine Learning
+\item Real Time Operating Systems
+\item Security: Hardware Software Interfaces
+\item Engineering Programming Languages
+\item Computer Graphics
+\item Computer Architecture
+\item Digital Signal Processing
+\item Image Processing
+\item Microprocessor Design
+\item Advanced Logic Design
+\item Ultrasound Imaging
+\item VLSI I
+\end{itemize}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{communication skills}
+%
+%\begin{entrylist}
+%
+%%------------------------------------------------
+%
+%\entry
+%{2011}
+%{Oral Presentation}
+%{California Business Conference}
+%{Presented the research I conducted for my Masters of Commerce degree.}
+%
+%%------------------------------------------------
+%
+%\entry
+%{2010}
+%{Poster}
+%{Annual Business Conference, Oregon}
+%{As part of the course work for BUS320, I created a poster analyzing several local businesses and presented this at a conference.}
+%
+%%------------------------------------------------
+%
+%\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{publications}
+%
+%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+%
+%\printbibsection{book}{books} % Print all books from the bibliography
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+%
+%\printbibsection{report}{research reports} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
