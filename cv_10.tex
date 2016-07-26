@@ -25,7 +25,7 @@
 
 \begin{document}
 
-\header{Michael}{Bartling}{Graduate student in machine learning and security} % Your name and current job title/field
+\header{Michael}{Bartling}{Graduate student in machine learning and security, graduating in December 2016}%{Strong in C++11 and embedded software development} % Your name and current job title/field
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
@@ -65,7 +65,145 @@ $\mu$C/OS-II
 %Seeking technical Summer internship.
 \section{Interests}
 
-\textbf{professional:} optimization methods, theoretical security, machine learning, software architectures, data visualization \\ \textbf{personal:} cooking, 3D CG art (Blender), guitar, animation 
+\textbf{professional:} C++11 development, embedded software, optimization methods, theoretical security, machine learning, software architectures, data visualization \\ \textbf{personal:} cooking, 3D CG art (Blender), guitar, animation 
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Full Time and Internships}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{University \\ of Texas}
+{Graduate Research Assistant}
+{2014--Now}
+{Austin, Texas \\
+\begin{itemize}
+\item Dynamic analysis of Windows malware on networks. Designed large scale malware analysis engine and virtual machine management system using AWS and MongoDB. Wrote low-overhead system call interceptor for Windows platforms. Developed robust anomaly detection pipeline for Windows malware.
+\item Dynamic analysis of mobile malware on networks. Built user trace record and replay system for Android applications, injected key malware categories into common applications, designed intelligent anomaly detectors for Android system calls.
+\item Context aware sensing. Automatic classification of user motion into activities based on smart phone accelerometers. Dynamically \textit{learned} privacy preserving user motion models. Automatic fall prediction and detection. Inferring information across untrusted contextual boundaries. 
+\end{itemize} }
+
+%------------------------------------------------
+
+\entry
+{Texas \\ Instruments}
+{\emph{Software Development Intern}}
+{Summer 2014}
+{Dallas, Texas \\  
+\begin{itemize}
+\item RFSDK Software development
+\item Designed end-to-end experiment manager for software-hardware interfacing.
+\item Designed intelligent LTE frame modeling and generation scripts.
+\item Digital pre-distortion design 
+\end{itemize}}
+
+\entry
+{Texas \\ Instruments}
+{\emph{Software Development Intern}}
+{Winter and Summer 2013}
+{Dallas, Texas \\ Wireless Backhaul Project
+	\begin{itemize}
+	\item \textbf{Ported Contiki OS} to TI FRAM line microcontrollers. Completely redesigned build system allowing for faster incremental builds. Third party required \$45k and 3 months to port code, I finished porting the code for free in just two weeks in my spare time. Enabled TI to conduct IoT R\&D with minimal effort.  
+	\item Designed and optimized Line of Sight channel estimation drivers.
+	\item Designed and optimized Line of Sight 2x2 and 4x4 MIMO channel equalizer drivers. Conducted precision study on fixed point versus floating point implementations.
+
+\end{itemize}}
+\entry
+{Texas\\  Instruments}
+{\emph{Software Development Intern}}
+{Winter 2013}
+{Dallas, Texas \\
+Helped formulate non line-of-sight transmitter chain on C6614 EVM
+}
+\entry
+{Texas \\ Instruments}
+{\emph{Software Development Intern}}
+{Summer 2012}
+{Dallas, Texas \\
+Designed and optimized Reed Solomon processing chain for TI C6614 EVM 
+}
+
+%------------------------------------------------
+
+\entry
+{University \\ of Texas}
+{Graduate Teaching Assistant: Software Design }
+{2016--Now}
+{Austin, Texas}
+
+%------------------------------------------------
+
+\entry
+{University \\ of Texas}
+{Graduate Teaching Assistant}
+{2014--2015}
+{Austin, Texas \\
+Introduction to Computing }
+
+%\entry
+%{2012--2013}
+%{Texas A\& M University}
+%{College Station, Texas}
+%{\emph{Research Assistant} \\
+%\begin{itemize}
+%\item FrogSAT Project
+%\item Smart Phone Initiative
+%\end{itemize}}
+
+
+% \end{entrylist}
+
+% \begin{entrylist}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\section{Noteworthy Projects}
+
+\begin{entrylist}
+\entry
+{Spring 2016}
+{Spatially Hashed Photon Map}
+{UT Austin}
+{Computer Graphics Final Project. High performance ray tracer with photon mapping support written in C++11. Key idea is that can encode photon aggregation into a data structure at build time rather than render time. 
+Furthermore, can leverage O(1) lookup time during rendering. \url{http://mbartling.github.io/photonMapper/}}
+
+\entry
+{Spring 2016}
+{QtLC3 and pyLC3}
+{UT Austin}
+{Rewrote Yale Patt's LC3 architecture simulator for use in classrooms. Simulator includes full python integration for easy unit testing and grading, and the GUI is written in the Qt5 framework. \url{http://minionhut.com/blog/post/lc3-simulator-overview}}
+
+\entry
+{2013--2014}
+{Senior Design}
+{Texas A\& M}
+{Honors Project under Dr. Gregory Huff and Dr. Jean-Francois Chamberland  \\
+Autonomous Mission Planning of RF Landscapes \\
+Designed robust map reconstruction algorithms (Extended block coordinate descent, Gaussian Mixture Models, and conic polynomial reconstruction) and application communication layer for autonomous quadcopter.}
+
+%------------------------------------------------
+
+\entry
+{2013-2014}
+{FrogSAT}
+{Texas A\& M}
+{Under Dr. Sunil Khatri \\
+Attempted to solve Boolean Satisfiability problem heuristically via Hadoop Map Reduce.} 
+
+%------------------------------------------------
+
+\end{entrylist}
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -78,8 +216,8 @@ $\mu$C/OS-II
 %------------------------------------------------
 
 \entry
-{2014--December 2016}
-{M.S. + Ph.D {\normalfont Computer Engineering}}
+{2014-- \\ Dec. 2016}
+{M.S. {\normalfont Computer Engineering}}
 {The University of Texas at Austin}
 {Advisor: Mohit Tiwari \\ Context-aware sensing, Dynamic malware analysis, Machine Learning. \\ GPA: 3.8}
 
@@ -101,98 +239,6 @@ $\mu$C/OS-II
  \\ Graduated high school 2 years early to attend accelerated TAMS program. \\ GPA: 3.89}
 
 %------------------------------------------------
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Experience}
-
-\subsection{Full Time and Internships}
-
-\begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{2014--Now}
-{University of Texas}
-{Austin, Texas}
-{\emph{Graduate Research Assistant} \\
-\begin{itemize}
-\item Dynamic analysis of Windows malware on networks. Designed large scale malware analysis engine and virtual machine management system using AWS and MongoDB. Wrote low-overhead system call interceptor for Windows platforms. Developed robust anomaly detection pipeline for Windows malware.
-\item Dynamic analysis of mobile malware on networks. Built user trace record and replay system for Android applications, injected key malware categories into common applications, designed intelligent anomaly detectors for Android system calls.
-\item Context aware sensing. Automatic classification of user motion into activities based on smart phone accelerometers. Dynamically \textit{learned} privacy preserving user motion models. Automatic fall prediction and detection. Inferring information across untrusted contextual boundaries. 
-\end{itemize} }
-
-\entry
-{2014--2015}
-{University of Texas}
-{Austin, Texas}
-{\emph{Graduate Teaching Assistant} \\
-Introduction to Computing }
-
-%\entry
-%{2012--2013}
-%{Texas A\& M University}
-%{College Station, Texas}
-%{\emph{Research Assistant} \\
-%\begin{itemize}
-%\item FrogSAT Project
-%\item Smart Phone Initiative
-%\end{itemize}}
-
-
-\end{entrylist}
-
-\begin{entrylist}
-
-\entry
-{2012--2014}
-{Texas Instruments, EP Labs}
-{Dallas, Texas}
-{\emph{Summer and Winter Intern} \\ Under Srinath Hosur and Ariton Xhafa \\ 
-\begin{itemize}
-\item Digital pre-distortion design 
-\item RFSDK Software development + designed end-to-end experiment manager for software-hardware interfacing.
-\item Designed intelligent LTE frame modeling and generation scripts.
-\item Wireless Backhaul Project
-	\begin{itemize}
-	\item Designed and optimized Line of Sight channel estimation drivers.
-	\item Designed and optimized Line of Sight 2x2 and 4x4 MIMO channel equalizer drivers. Conducted precision study on fixed point versus floating point implementations.
-	\item Helped formulate non line-of-sight transmitter chain on C6614 EVM
-	\item Designed and optimized Reed Solomon processing chain for TI C6614 EVM 
-	\end{itemize}
-\item Ported Contiki OS to TI FRAM line microcontrollers. 
-\end{itemize}}
-%------------------------------------------------
-
-\end{entrylist}
-
-\section{Noteworthy Projects}
-
-\begin{entrylist}
-
-\entry
-{2013--2014}
-{Senior Design}
-{Texas A\& M}
-{Honors Project under Dr. Gregory Huff and Dr. Jean-Francois Chamberland  \\
-Autonomous Mission Planning of RF Landscapes \\
-Designed robust map reconstruction algorithms (Extended block coordinate descent, Gaussian Mixture Models, and conic polynomial reconstruction) and application communication layer for autonomous quadcopter.}
-
-%------------------------------------------------
-
-\entry
-{2013-2014}
-{FrogSAT}
-{Texas A\& M}
-{Under Dr. Sunil Khatri \\
-Attempted to solve Boolean Satisfiability problem heuristically via Hadoop Map Reduce.} 
-
-%------------------------------------------------
-
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------

@@ -37,6 +37,14 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
+ %%====Remove Colors========
+  \colorlet{green}{gray}
+  \colorlet{orange}{gray}
+  \colorlet{purple}{gray}
+  \colorlet{brown}{gray}
+  \colorlet{red}{gray}
+  \colorlet{blue}{gray}
+  %%===========
   \colorlet{fillheader}{gray}
   \colorlet{header}{white}
 \fi
@@ -299,7 +307,9 @@
     {}%
 }
 
-\defbibheading{bibheading}[\bibname]{%   \subsubsection*{#1}   \markboth{#1}{#1}
+\defbibheading{bibheading}[\bibname]{%
+   \subsubsection*{#1}
+   \markboth{#1}{#1}
 }
 
 \newcommand{\printbibsection}[2]{
