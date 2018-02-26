@@ -25,16 +25,16 @@
 
 \begin{document}
 
-\header{Michael}{Bartling}{Graduate student in machine learning and security, graduating in December 2016}%{Strong in C++11 and embedded software development} % Your name and current job title/field
+\header{Michael}{Bartling}{Graduate Applications Engineer, Arm}%{Strong in C++11 and embedded software development} % Your name and current job title/field
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
 \section{contact}
-109 W. 39th St
-Apt. 317
-Austin, TX 78751
+4500 Steiner Ranch Blvd
+Apt 3503
+Austin, TX 78732
 USA
 ~
 +1 (214) 707-2808
@@ -54,13 +54,12 @@ Julia, Matlab, Verilog
 C, Embedded C, R, SystemC}
 \section{OS}
 Debian, RHEL6-7,
-Windows, Android,
-$\mu$C/OS-II
+Windows, mbed OS,
 \end{aside}
 
 %----------------------------------------------------
-\section{Objective}
-To procure a full time software engineering role in systems development or in embedded platforms.
+%\section{Objective}
+%To procure a full time software engineering role in systems development or in embedded platforms.
 %------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
@@ -68,7 +67,7 @@ To procure a full time software engineering role in systems development or in em
 %Seeking technical Summer internship.
 \section{Interests}
 
-\textbf{professional:} C++11 development, embedded software, optimization methods, theoretical security, machine learning, software architectures, data visualization \\ \textbf{personal:} cooking, 3D CG art (Blender), guitar, animation 
+\textbf{professional:} C++11 development, embedded software, optimization methods, theoretical security, machine learning, data visualization \\ \textbf{personal:} cooking, 3D CG art (Blender), auto restoration, animation 
 
 
 %----------------------------------------------------------------------------------------
@@ -84,9 +83,26 @@ To procure a full time software engineering role in systems development or in em
 %------------------------------------------------
 
 \entry
+{Arm}
+{Graduate Applications Engineer: Developer Experience (DevX)}
+{2017--Now}
+{Austin, Texas \\
+\begin{itemize}
+\item \textbf{uTensor}. Designed lightweight machine inference capabilities for Cortex M devices. \url{https://github.com/utensor}.
+\item \textbf{Iterative model learning on edge devices}(\textit{In Progress}). 
+\item \textbf{SpamBlaster}. Designed domain language specific spam classifier for Mbed ecosystem which significantly outperformed previous system. 
+\item \textbf{TheFAQ}. Semi-automatic ontology generator for better search within Arm.
+\item \textbf{Mbed Greenlight} Front end accessibility testing for \url{os.mbed.com}
+\item \textbf{Device Health project}. 
+\end{itemize} }
+
+%------------------------------------------------
+%------------------------------------------------
+
+\entry
 {University \\ of Texas}
 {Graduate Research Assistant}
-{2014--Now}
+{2014--2017}
 {Austin, Texas \\
 \begin{itemize}
 \item \textbf{Dynamic analysis of Windows malware on networks}. Designed large scale malware analysis engine and virtual machine management system using AWS and MongoDB. Wrote low-overhead system call interceptor for Windows platforms. Developed robust anomaly detection pipeline for Windows malware. This software is basis for \textbf{one of the largest dynamic malware analysis ever conducted in academia}, collecting approximately 3400 hours of malicious system call traces.
@@ -141,22 +157,6 @@ Helped formulate non line-of-sight transmitter chain on C6614 EVM
 Designed and optimized Reed Solomon processing chain for TI C6614 EVM 
 }
 
-%------------------------------------------------
-
-\entry
-{University \\ of Texas}
-{Graduate Teaching Assistant: Software Design }
-{2016--Now}
-{Austin, Texas}
-
-%------------------------------------------------
-
-\entry
-{University \\ of Texas}
-{Graduate Teaching Assistant}
-{2014--2015}
-{Austin, Texas \\
-Introduction to Computing }
 
 %\entry
 %{2012--2013}
@@ -177,9 +177,14 @@ Introduction to Computing }
 
 \end{entrylist}
 
-\section{Noteworthy Projects}
-
+\section{Noteworthy side projects}
 \begin{entrylist}
+
+\entry
+{2018}
+{uTensor Handwriting recognition demo}
+{Arm}
+{uTensor minimum viable product demo based on simple 2-layer fully connected NN and MNIST. Code: \url{https://github.com/uTensor/utensor-mnist-demo}, Video: \url{https://www.facebook.com/neil.tan/videos/10159971829870385/}}
 \entry
 {Spring 2016}
 {Spatially Hashed Photon Map}
@@ -193,27 +198,11 @@ Furthermore, can leverage O(1) lookup time during rendering. \url{http://mbartli
 {UT Austin}
 {Rewrote Yale Patt's LC3 architecture simulator for use in classrooms. Simulator includes full python integration for easy unit testing and grading, and the GUI is written in the Qt5 framework. \url{http://minionhut.com/blog/post/lc3-simulator-overview}}
 
-\entry
-{2013--2014}
-{Senior Design}
-{Texas A\& M}
-{Honors Project under Dr. Gregory Huff and Dr. Jean-Francois Chamberland  \\
-Autonomous Mission Planning of RF Landscapes \\
-Designed robust map reconstruction algorithms (Extended block coordinate descent, Gaussian Mixture Models, and conic polynomial reconstruction) and application communication layer for autonomous quadcopter.}
-
-%------------------------------------------------
-
-\entry
-{2013-2014}
-{FrogSAT}
-{Texas A\& M}
-{Under Dr. Sunil Khatri \\
-Attempted to solve Boolean Satisfiability problem heuristically via Hadoop Map Reduce.} 
-
 %------------------------------------------------
 
 \end{entrylist}
 
+\newpage
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -308,6 +297,8 @@ Attempted to solve Boolean Satisfiability problem heuristically via Hadoop Map R
 \begin{itemize}
 \item Convex Optimization
 \item Large Scale Machine Learning
+\item Multicore programming
+\item Parallelism and locality
 \item Real Time Operating Systems
 \item Security: Hardware Software Interfaces
 \item Engineering Programming Languages
