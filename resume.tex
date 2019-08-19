@@ -1,0 +1,408 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Michael}{Bartling}{Graduate Applications Engineer, Arm}%{Strong in C++11 and embedded software development} % Your name and current job title/field
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+12500 Scates Ct
+Austin, TX 78732
+USA
+~
++1 (214) 707-2808
+~
+\href{mailto:michael.bartling15@gmail.com}{michael.bartling15
+@gmail.com}
+%\href{mailto:michael.bartling15@utexas.edu}{michael.bartling15@utexas.edu}
+\href{http://www.minionhut.com}{minionhut.com}
+\href{http://github.com/mbartling}{github.com/mbartling}
+%\section{languages}
+%english mother tongue
+%spanish \& italian fluency
+\section{programming}
+{%\color{red} $\varheartsuit$} JavaScript
+Python, C++, C++11
+Julia, Matlab, Verilog
+C, Embedded C, R, SystemC}
+\section{OS}
+Arch, Debian,
+Windows, mbed OS,
+\end{aside}
+
+%----------------------------------------------------
+%\section{Objective}
+%To procure a full time software engineering role in systems development or in embedded platforms.
+%------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\section{Goal}
+%Seeking technical Summer internship.
+\section{Interests}
+
+\textbf{professional:} C++11 development, embedded software, optimization methods, theoretical security, machine learning, data visualization \\ \textbf{personal:} cooking, 3D CG art (Blender), auto restoration, animation 
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Full Time and Internships}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{Arm}
+{Research Engineer: IoT Services Research}
+{2018--Now}
+{Austin, Texas \\
+\begin{itemize}
+\item \textbf{Developed new software architectures for vastly improving IoT deployments} Ongoing
+\begin{itemize}
+    \item Pioneering "Just in Time" decompression of software modules
+    \item Exploring novel methods for granular over-the-air firmware updates on LPWAN
+    \item Attempting to make basic notions of security zero-touch for developers
+\end{itemize}
+\item \textbf{Zero-touch Device Provisioning} Ongoing
+    \begin{itemize}
+        \item Proposing new solutions to fundamental problems in massive IoT deployments
+        \item Working closely with several third party research organizations, silicon manufacturers, and network operators to drive technology towards industry standards.
+    \end{itemize}
+\item \textbf{uTensor}. Designed lightweight machine inference capabilities for Cortex M devices. \url{https://github.com/utensor}.
+    \begin{itemize}
+    \item Recently announced tech merger with Googles Tensorflow Lite: \url{https://twitter.com/JeffDean/status/1126229604224487425}
+    \item First instance of Machine learning (inference) on the tiniest devices
+    \end{itemize}
+\item \textbf{Secure Remote Debugging in Constrained Systems}
+\item \textbf{Lightweight Compression Engines for Constrained Devices}
+    \begin{itemize}
+        \item Developed novel compression techniques with bounded predictable performance.
+        \item Technology transfered into several major ongoing projects
+        \item Principal inventor on 2 in-flight patents
+    \end{itemize}
+\end{itemize} }
+
+%------------------------------------------------
+%------------------------------------------------
+
+\entry
+{Arm}
+{Applications Engineer: Developer Experience (DevX)}
+{2017--2018}
+{Austin, Texas \\
+\begin{itemize}
+\item \textbf{uTensor}. Designed lightweight machine inference capabilities for Cortex M devices. \url{https://github.com/utensor}.
+\item \textbf{Iterative model learning on edge devices}(\textit{In Progress}). 
+\item \textbf{SpamBlaster}. Designed domain language specific spam classifier for Mbed ecosystem which significantly outperformed previous system. 
+\item \textbf{TheFAQ}. Semi-automatic ontology generator for better search within Arm.
+\item \textbf{Mbed Greenlight} Front end accessibility testing for \url{os.mbed.com}
+\item \textbf{Device Health project}. 
+\end{itemize} }
+
+%------------------------------------------------
+
+%------------------------------------------------
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+
+\entry
+{University \\ of Texas}
+{Graduate Research Assistant}
+{2014--2017}
+{Austin, Texas \\
+\begin{itemize}
+\item \textbf{Dynamic analysis of Windows malware on networks}. Designed large scale malware analysis engine and virtual machine management system using AWS and MongoDB. Wrote low-overhead system call interceptor for Windows platforms. Developed robust anomaly detection pipeline for Windows malware. This software is basis for \textbf{one of the largest dynamic malware analysis ever conducted in academia}, collecting approximately 3400 hours of malicious system call traces.
+\item \textbf{Dynamic analysis of mobile malware on networks}. Built state-of-the-art user trace record and replay system for Android applications, injected key malware categories into common applications, designed intelligent anomaly detectors for Android system calls.
+\item \textbf{Context aware sensing}. Automatic classification of user motion into activities based on smart phone accelerometers. Dynamically \textit{learned} privacy preserving user motion models. Inferring information across untrusted contextual boundaries. 
+\end{itemize} }
+
+\entry
+{Texas \\ Instruments}
+{\emph{Software Development Intern}}
+{Summer 2014}
+{Dallas, Texas \\  
+\begin{itemize}
+\item RFSDK Software development
+\item Designed end-to-end experiment manager for software-hardware interfacing.
+\item Designed intelligent LTE frame modeling and generation scripts significantly reducing software/hardware testing times while allowing for dynamic end-user capacity simulations.
+\item Digital pre-distortion design 
+\end{itemize}}
+
+%\entry
+%{Texas \\ Instruments}
+%{\emph{Software Development Intern}}
+%{Winter and Summer 2013}
+%{Dallas, Texas \\ Wireless Backhaul Project
+%	\begin{itemize}
+%	\item \textbf{Ported Contiki OS} to TI FRAM line microcontrollers. Completely redesigned build system allowing for faster incremental builds. Third party required \$45k and 3 months to port code, I finished porting the code for free in just two weeks in my spare time. Enabled TI to conduct IoT R\&D with minimal effort.  
+%	\item Designed and optimized Line of Sight channel estimation drivers.
+%	\item Designed and optimized Line of Sight 2x2 and 4x4 MIMO channel equalizer drivers. Conducted precision study on fixed point versus floating point implementations.
+%
+%    \end{itemize}}
+%
+%% % SPLIT==================
+%% \end{entrylist}
+%% \begin{entrylist}
+%% % SPLIT==================
+%
+%\entry
+%{Texas\\  Instruments}
+%{\emph{Software Development Intern}}
+%{Winter 2013}
+%{Dallas, Texas \\
+%Helped formulate non line-of-sight transmitter chain on C6614 EVM
+%}
+%\entry
+%{Texas \\ Instruments}
+%{\emph{Software Development Intern}}
+%{Summer 2012}
+%{Dallas, Texas \\
+%Designed and optimized Reed Solomon processing chain for TI C6614 EVM 
+%}
+
+
+%\entry
+%{2012--2013}
+%{Texas A\& M University}
+%{College Station, Texas}
+%{\emph{Research Assistant} \\
+%\begin{itemize}
+%\item FrogSAT Project
+%\item Smart Phone Initiative
+%\end{itemize}}
+
+
+% \end{entrylist}
+
+% \begin{entrylist}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%\section{Noteworthy side projects}
+%\begin{entrylist}
+%\entry
+%{2018}
+%{Doom mbed OS port}
+%{Arm}
+%{Simple Doom port for mbed OS because it did not exist}
+%\entry
+%{2018}
+%{uTensor Handwriting recognition demo}
+%{Arm}
+%{uTensor minimum viable product demo based on simple 2-layer fully connected NN and MNIST. Code: \url{https://github.com/uTensor/utensor-mnist-demo}, Video: \url{https://www.facebook.com/neil.tan/videos/10159971829870385/}}
+%\entry
+%{Spring 2016}
+%{Spatially Hashed Photon Map}
+%{UT Austin}
+%{Computer Graphics Final Project. High performance ray tracer with photon mapping support written in C++11. Key idea is that can encode photon aggregation into a data structure at build time rather than render time. 
+%Furthermore, can leverage O(1) lookup time during rendering. \url{http://mbartling.github.io/photonMapper/}}
+%\end{entrylist}
+%\begin{entrylist}
+%\entry
+%{Spring 2016}
+%{QtLC3 and pyLC3}
+%{UT Austin}
+%{Rewrote Yale Patt's LC3 architecture simulator for use in classrooms. Simulator includes full python integration for easy unit testing and grading, and the GUI is written in the Qt5 framework. \url{http://minionhut.com/blog/post/lc3-simulator-overview}}
+%
+%%------------------------------------------------
+%
+%\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2014-- \\ Dec. 2016}
+{M.S. {\normalfont Computer Engineering}}
+{The University of Texas at Austin}
+{Advisor: Mohit Tiwari \\ Context-aware sensing, Dynamic malware analysis, Machine Learning. \\ GPA: 3.8}
+
+%------------------------------------------------
+
+\entry
+{2011--2014}
+{Bachelor of Science {\normalfont, Summa Cum Laude}}
+{Texas A \& M University, College Station}
+{Electrical Engineering \\ Specialized in Computer Engineering \\ Sub-specialized in Signal Processing and Image Processing. \\ GPA: 3.9}
+
+%------------------------------------------------
+
+\entry
+{2009--2011}
+{Advanced High School Diploma}
+{Texas Academy of Mathematics and Science}
+{\emph{UNT, Denton, Texas}
+ \\ Graduated high school 2 years early to attend accelerated TAMS program. \\ GPA: 3.89}
+
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+%
+%\begin{entrylist}
+%
+%%------------------------------------------------
+%\entry
+%{2015}
+%{Dell Innovation Award: Hack TX} 
+%{Austin TX}
+%{Distinguishing style and content in images: The ability to create any Instagram filter.}
+%\entry
+%{2015}
+%{2nd Place MDP Hackathon} 
+%{Athena Health, Austin TX}
+%{Accurate fall prediction and motion state regression using cellphone accelerometer information.}
+%
+%\entry
+%{2014-2017}
+%{Departmental Fellowship}
+%{Computer Architecture and Embedded Processing, The University of Texas}
+%{}
+%
+%\entry
+%{2014}
+%{Summa Cum Laude}
+%{Texas A\& M University,  Electrical and Computer Engineering}
+%{}
+%
+%\entry
+%{2011-2014}
+%{President's Endowed Scholar}
+%{Texas A\& M University,  Electrical and Computer Engineering}
+%{}
+%
+%\entry
+%{2011-2014}
+%{Boltzman Scholar}
+%{Texas A\& M University,  Electrical and Computer Engineering}
+%{}
+%\end{entrylist}
+%\begin{entrylist}
+%\entry
+%{2008}
+%{Eagle Scout}
+%{Boy Scouts of America}
+%{}
+%%------------------------------------------------
+%
+%\end{entrylist}
+
+\section{Courses}
+\begin{itemize}
+\item Convex Optimization
+\item Large Scale Machine Learning
+\item Multicore programming
+\item Parallelism and locality
+\item Real Time Operating Systems
+\item Security: Hardware Software Interfaces
+\item Engineering Programming Languages
+\item Computer Graphics
+\item Computer Architecture
+\item Digital Signal Processing
+\item Image Processing
+\item Microprocessor Design
+\item Advanced Logic Design
+\item Ultrasound Imaging
+\item VLSI I
+\end{itemize}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{communication skills}
+%
+%\begin{entrylist}
+%
+%%------------------------------------------------
+%
+%\entry
+%{2011}
+%{Oral Presentation}
+%{California Business Conference}
+%{Presented the research I conducted for my Masters of Commerce degree.}
+%
+%%------------------------------------------------
+%
+%\entry
+%{2010}
+%{Poster}
+%{Annual Business Conference, Oregon}
+%{As part of the course work for BUS320, I created a poster analyzing several local businesses and presented this at a conference.}
+%
+%%------------------------------------------------
+%
+%\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{publications}
+%
+%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+%
+%\printbibsection{book}{books} % Print all books from the bibliography
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+%
+%\printbibsection{report}{research reports} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
